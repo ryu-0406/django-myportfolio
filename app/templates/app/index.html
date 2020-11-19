@@ -1,5 +1,5 @@
 {% extends "app/base.html" %}
-
+{% load static %}
 {% block content %}
 
 <!-- ======= Intro Section ======= -->
@@ -30,7 +30,7 @@
                   <div class="row">
                     <div class="col-sm-6 col-md-5">
                       <div class="about-img">
-                        <img src="assets/img/testimonial-2.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                        <img src="{% static 'img/testimonial-2.jpg' %}" class="img-fluid rounded b-shadow-a" alt="">
                       </div>
                     </div>
                     <div class="col-sm-6 col-md-7">
@@ -211,9 +211,9 @@
         <div class="row">
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/work-1.jpg" data-gall="portfolioGallery" class="venobox">
+              <a href="{% static 'img/work-1.jpg'%}" data-gall="portfolioGallery" class="venobox">
                 <div class="work-img">
-                  <img src="assets/img/work-1.jpg" alt="" class="img-fluid">
+                  <img src="{% static 'img/work-1.jpg' %}" alt="" class="img-fluid">
                 </div>
               </a>
               <div class="work-content">
@@ -235,9 +235,9 @@
           </div>
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/work-2.jpg" data-gall="portfolioGallery" class="venobox">
+              <a href="{% static 'img/work-2.jpg'}" data-gall="portfolioGallery" class="venobox">
                 <div class="work-img">
-                  <img src="assets/img/work-2.jpg" alt="" class="img-fluid">
+                  <img src="{% static 'img/work-2.jpg'" alt="" class="img-fluid">
                 </div>
               </a>
               <div class="work-content">
@@ -259,9 +259,9 @@
           </div>
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/work-3.jpg" data-gall="portfolioGallery" class="venobox">
+              <a href="{% static 'img/work-3.jpg' %}" data-gall="portfolioGallery" class="venobox">
                 <div class="work-img">
-                  <img src="assets/img/work-3.jpg" alt="" class="img-fluid">
+                  <img src="{% static 'img/work-3.jpg' %}'" alt="" class="img-fluid">
                 </div>
               </a>
               <div class="work-content">
@@ -283,9 +283,9 @@
           </div>
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/work-4.jpg" data-gall="portfolioGallery" class="venobox">
+              <a href="{% static 'img/work-4.jpg' %}" data-gall="portfolioGallery" class="venobox">
                 <div class="work-img">
-                  <img src="assets/img/work-4.jpg" alt="" class="img-fluid">
+                  <img src="{% static 'img//work-4.jpg' %}" alt="" class="img-fluid">
                 </div>
               </a>
               <div class="work-content">
@@ -307,9 +307,9 @@
           </div>
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/work-5.jpg" data-gall="portfolioGallery" class="venobox">
+              <a href="{% static 'img//work-5.jpg' %}" data-gall="portfolioGallery" class="venobox">
                 <div class="work-img">
-                  <img src="assets/img/work-5.jpg" alt="" class="img-fluid">
+                  <img src="{% static 'img//work-4.jpg' %}" alt="" class="img-fluid">
                 </div>
               </a>
               <div class="work-content">
@@ -331,9 +331,9 @@
           </div>
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/work-6.jpg" data-gall="portfolioGallery" class="venobox">
+              <a href="static/img/work-6.jpg{% static 'img//work-6.jpg' %}" data-gall="portfolioGallery" class="venobox">
                 <div class="work-img">
-                  <img src="assets/img/work-6.jpg" alt="" class="img-fluid">
+                  <img src="{% static 'img//work-6.jpg' %}" alt="" class="img-fluid">
                 </div>
               </a>
               <div class="work-content">
@@ -356,7 +356,8 @@
 
         </div>
       </div>
-    </section><!-- End Portfolio Section -->
+    </section>
+    <!-- End Portfolio Section -->
 
     <!-- ======= Contact Section ======= -->
     <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
@@ -447,3 +448,6 @@
   </main><!-- End #main -->
 
   {% endblock %}
+
+
+  <script type="text/javascript" src="{% static 'js/main.js' %}"></script>

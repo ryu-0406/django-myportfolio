@@ -1,6 +1,6 @@
 from django.views.generic import View
 from django.shortcuts import render
-from .models import Profile, Work
+from .models import Work
 
 # Create your views here.
 
