@@ -13,3 +13,10 @@ class Work(models.Model):
 
     def __str__(self):
         return self.title
+
+class Skill(models.Model):
+    name = models.CharField('スキル名', max_length=100)
+    percentage = models.IntegerField('パーセンテージ')
+
+    def __str__(self):
+        return self.name
